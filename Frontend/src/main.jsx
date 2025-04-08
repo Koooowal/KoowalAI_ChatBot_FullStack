@@ -10,6 +10,7 @@ import ChatPage from './Routes/ChatPage/chatPage'
 import RootLayout from './Layouts/RootLayout/rootLayout'
 import DashboardLayout from './Layouts/DashboardLayout/dashboardLayout'
 
+
 const router = createBrowserRouter([
  {
   element: <RootLayout />,
@@ -17,6 +18,14 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <Homepage />,
+    },
+    {
+      path: "/sign-in/*",
+      element: <SignInPage />,
+    },
+    {
+      path: "/sign-up/*",
+      element: <SignUpPage />,
     },
     {
       element: <DashboardLayout />,
