@@ -18,7 +18,7 @@ function rootLayout() {
       <div className='rootLayout'>
         <header>
           <Link to='/' className='logo'>
-            <img src="./logo.png" alt="" />
+            <img src="/logo.png" alt="" />
             <span>KOOWAL AI</span>
           </Link>
           <div className="user">

@@ -31,6 +31,7 @@ function homePage() {
                   : typingStatus === "human2"
                   ? "/human2.jpeg"
                   : "hero-image.png"
+                
               }
               alt=""
             />
