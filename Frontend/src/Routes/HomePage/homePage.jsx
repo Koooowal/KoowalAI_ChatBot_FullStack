@@ -3,8 +3,11 @@ import './homePage.css'
 import { Link } from 'react-router-dom'
 import { TypeAnimation } from "react-type-animation";
 
+
 function homePage() {
   const [typingStatus, setTypingStatus] = useState("human1");
+
+  
   return (
     <div className='homepage'>
       <img src="./orbital.png" alt="" className='orbital'/>
