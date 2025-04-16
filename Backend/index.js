@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import ImageKit from 'imagekit';
 import db from './db/db.js';
-import Chat from './models/chat.model.js';
-import UserChats from './models/userChats.model.js';
+import Chat from '../models/chat.model.js';
+import UserChats from '../models/userChats.model.js';
 import { ClerkExpressRequireAuth } from "@clerk/clerk-sdk-node";
 
 const app = express();
@@ -106,7 +106,7 @@ app.put("/api/chat/:id", ClerkExpressRequireAuth(), async (req, res) => {
 
   const { question, answer, img } = req.body;
 
-  const newItems = [
+  const newItems = [ 
     ...(question
       ? [{ role: "user", parts: [{ text: question }], ...(img && { img }) }]
       : []),
