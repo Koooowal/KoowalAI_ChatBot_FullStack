@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import ImageKit from 'imagekit';
 import db from './db/db.js';
-import Chat from '../models/chat.model.js';
-import UserChats from '../models/userChats.model.js';
+import Chat from '../Models/chat.model.js';
+import UserChats from '../Models/userChats.model.js';
 import { ClerkExpressRequireAuth } from "@clerk/clerk-sdk-node";
 
 const app = express();
